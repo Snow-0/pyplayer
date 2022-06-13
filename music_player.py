@@ -20,5 +20,5 @@ class MusicPlayer:
             py.mixer.music.pause()
             self.is_paused = True
 
-    def change_volume(self):
-        pass
+    def set_volume(self, volume):
+        py.mixer.music.set_volume(volume)
