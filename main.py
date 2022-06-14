@@ -7,6 +7,7 @@ sg.theme("Default 1")
 script_dir = os.path.dirname(__file__)
 play_button = os.path.join(script_dir, "images/play.png")
 pause_button = os.path.join(script_dir, "images/pause.png")
+vol_button = os.path.join(script_dir, "images/vol.png")
 
 layout = [
     [sg.Text("PyPlayer")],
@@ -22,6 +23,7 @@ layout = [
             key="Pause", image_source=pause_button, image_size=(25, 25),
             border_width=0, pad=((15, 30), (0, 0))
         ),
+        sg.Image(source=vol_button),
         sg.Slider(
             orientation="horizontal",
             pad=((0, 0), (0, 20)),
