@@ -10,6 +10,7 @@ class MusicPlayer:
     def play(self, path):
         py.mixer.music.load(path)
         py.mixer.music.play()
+        print(py.mixer.music.get_pos())
 
     def toggle_music(self):
         if self.is_paused:
